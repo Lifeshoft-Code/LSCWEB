@@ -1,16 +1,20 @@
-form = document.getElementById('form');
-var btn = document.getElementById("btn-submit").addEventListener('click', registrar);
+var ventanaForm = document.getElementById('formulario');
+var btnAbrirForm = document.getElementById('btn-open-form');
+var btnCerrarForm = document.getElementById("btn-close-form");
+
+btnAbrirForm.addEventListener('click', function(){
+    ventanaForm.classList.remove('active');
+});
 
 
-function registrar(){
-
-    var userName = document.getElementById('userName');
-    var userLastName = document.getElementById('userLastName');
+btnCerrarForm.addEventListener('click', function(){
+    ventanaForm.classList.add('active');
     
-    localStorage.setItem('name', userName.value);
-    localStorage.setItem('LastName', userLastName.value);
-      
-    location.href = "index.html";
-}    
+});
+
+
+
+
+
 
 
