@@ -1,53 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
 }
-.LSC-pageName{
-    width: 97%;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 2px auto 0px;
-}
-.main-menu{
-    position: sticky;
-    top: 5px;
-    display: flex;
-    width: 97%;
-    margin: 8px auto;
-    background-color: rgba(31, 31, 31, 0.815);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgb(146, 146, 146);
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    
 
+.main-header {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
+.main-header p {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
-.container-items{
-    height: 37px;
-    flex-grow: 1; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    
-}
-.container-items > a{
-    font-family: Arial;
-    color: #fff;
-    text-decoration: none;
-    
-}
-footer{
-    margin: 30px auto 0 ;
-    width: 97%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: rgb(102, 102, 102);
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-family: arial;
 
+.main-header p span {
+  color: #F24130;
 }
+
+.main-menu {
+  background-color: #2A3740;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92.7%;
+  margin: 0 auto;
+}
+
+.main-menu_item {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.main-menu_item a {
+  color: #fff;
+  text-decoration: none;
+  font-family: arial;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2A3740;
+}
+
+footer .footer-items p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .main-menu {
+    background-color: #3b1261;
+    color: brown;
+  }
+}
+/*# sourceMappingURL=default.css.map */
