@@ -61,6 +61,10 @@ body {
   cursor: pointer;
 }
 
+.header-item_ico-menu {
+  display: none;
+}
+
 .main-menu {
   background-color: #2A3740;
   display: -webkit-box;

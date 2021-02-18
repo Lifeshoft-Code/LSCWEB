@@ -48,7 +48,7 @@ hr {
 }
 
 .article-about-us section {
-  padding: 20px;
+  padding: 30px;
   border: 1px solid rgba(97, 97, 97, 0.377);
   -webkit-box-shadow: 0 0 10px 10px rgba(202, 201, 201, 0.411);
           box-shadow: 0 0 10px 10px rgba(202, 201, 201, 0.411);
@@ -66,7 +66,7 @@ hr {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.article-about-us .teacher-container {
+.article-about-us .admin-container {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -75,20 +75,60 @@ hr {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 10px 0 0 0;
-  padding-right: 30px;
+  margin: 10px 0 10px 0;
+  padding: 30px;
 }
 
-.article-about-us .teacher-container .teacher-container_img {
+.article-about-us .admin-container .admin-container_img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background-color: #797575;
 }
 
-.article-about-us .teacher-container p {
+.article-about-us .admin-container .admin-container_text {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px 10px;
   font-size: 18px;
+}
+
+.article-about-us .admin-container .admin-container_text .admi-container_text-name {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .admin-container {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 10px 0 0 0;
+    padding-right: 30px;
+  }
+  .admin-container .admin-container_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #797575;
+    margin-bottom: 10px;
+  }
+  .admin-container .admin-container_text {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 20px 10px;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+  }
+  .admin-container .admin-container_text p {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=about-us.css.map */
