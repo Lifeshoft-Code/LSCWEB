@@ -3,6 +3,13 @@
   margin: 0;
 }
 
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .main-header {
   width: 100%;
   height: 50px;
@@ -249,28 +256,49 @@ footer .footer-items p {
 }
 
 @media (max-width: 600px) {
+  .main-header {
+    background-color: #2A3740;
+  }
+  .header-item_name {
+    color: #fff;
+  }
   .header-item_ico-menu {
     display: block;
   }
   .main-menu {
     background-color: #2A3740;
+    display: block;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    visibility: visible;
+  }
+  .btn-close-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 0;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    visibility: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
-  .main-menu.active {
+  .btn-close-menu p {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F24130;
+    cursor: pointer;
+  }
+  .main-menu.close-menu {
     visibility: hidden;
   }
   .main-menu_items {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 0;
   }
   .main-menu_item {
     padding: 10px 20px;
