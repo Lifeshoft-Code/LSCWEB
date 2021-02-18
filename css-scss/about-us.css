@@ -69,9 +69,9 @@ hr {
 .article-about-us .teacher-container {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+ 
+ 
+ 
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
