@@ -10,36 +10,40 @@
     <link rel="stylesheet" href="./css-scss/home.css">
 
 </head>
-<body>
+ <body> 
     <header class="main-header">
         <div class="header-items">
-            <p>LifeShoft-<span>Code</span></p>
+            <div class="header-item_name">
+                <p>LifeShoft-<span>Code</span></p>
+
+            </div>
+            <div class="header-item_ico-menu" id="header-item_ico-menu">
+                <p id="btn-menu">­&#9776;</p>
+            </div>
         </div>
     </header>
-    <nav class="main-menu">
+    <nav class="main-menu" id="main-menu">
         <div class="main-menu_items">
             <div class="main-menu_item"><a href="">Inicio</a></div>
             <div class="main-menu_item"><a href="./views/about-us.html">Sobre Nosotros</a></div>
             <div class="main-menu_item"><a href="">Ayuda</a></div>
-            <div class="main-menu_item"><a href="#" id="btn-open-form">Iniciar sección</a></div>
+            <div class="main-menu_item"><a href="#" id="btn-open-form">Iniciar sesión</a></div>
         </div>
-        
-        
     </nav>
-    
+
     <div class="img-01">
         <div class="img-01-item">
             <p>#Programación</p>
         </div>
     </div>
-    
+
 
     <div class="document-container">
-        
+
         <div class="framework-container">
             <h2>Curso de Framework</h2>
             <div class="framework">
-                <div class="framework-item"><a href="">Bootsrap</a></div>
+                <div class="framework-item"><a href="bootstrap.html">Bootstrap</a></div>
                 <div class="framework-item"><a href="">Jquery</a></div>
                 <div class="framework-item"><a href="">Angular</a></div>
             </div>
@@ -47,7 +51,7 @@
         <div class="pl-container">
             <h2 class="section-name">Nuestros Cursos de Programación</h2>
             <div class="pl">
-                
+
                 <div class="pl-item">
                     <div class="pl-item_img">
                         <img src="./assent/img/c++.png" alt="">
@@ -56,16 +60,16 @@
                         <h3>Curso de C++</h3>
                         <p>Roxana Jones</p>
                     </div>
-                    
-                    
+
+
                     <a href="" class="pl-item_btn">Entrar al curso</a>
                 </div>
                 <div class="pl-item">
                     <div class="pl-item_img">
                         <img src="./assent/img/php.png" alt="">
                     </div>
-                    
-                    
+
+
                     <div class="pl-item_text-info">
                         <h3>Curso de PHP</h3>
                         <p>Javier Lawler</p>
@@ -76,14 +80,14 @@
                     <div class="pl-item_img">
                         <img src="./assent/img/csharp.png" alt="">
                     </div>
-                    
+
                     <div class="pl-item_text-info">
                         <h3>Curso de C#</h3>
                         <p>Roxana Jones</p>
                     </div>
                     <a href="" class="pl-item_btn">Entrar al curso</a>
                 </div>
-    
+
             </div>
         </div>
     </div>
@@ -102,10 +106,10 @@
                 <input type="text">
                 <a class="a-account" href="#">No tengo cuenta</a>
                 <div class="form-btns">
-                    <input class="btn-submit" type="button" value="Enviar">
                     <input class="btn-cancel" type="button" value="Cancerlar">
+                    <input class="btn-submit" type="button" value="Enviar">
                 </div>
-                
+
             </form>
         </div>
     </div>
