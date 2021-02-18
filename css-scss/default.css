@@ -221,7 +221,7 @@ footer .footer-items p {
 
 @media (max-width: 600px) {
   .main-menu {
-    background-color: #3b1261;
+    background-color: $colorBlueDark;
     color: brown;
   }
 }
