@@ -3,13 +3,6 @@
   margin: 0;
 }
 
-body {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 .main-header {
   width: 100%;
   height: 50px;
@@ -44,6 +37,11 @@ body {
   color: #272727;
 }
 
+.header-item_name a {
+  text-decoration: none;
+  color: #282828;
+}
+
 .header-item_name span {
   color: #F24130;
 }
@@ -61,10 +59,6 @@ body {
   cursor: pointer;
 }
 
-.header-item_ico-menu {
-  display: none;
-}
-
 .main-menu {
   background-color: #2A3740;
   display: -webkit-box;
@@ -77,6 +71,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-menu .btn-close-menu {
+  visibility: hidden;
 }
 
 .main-menu_items {
@@ -137,6 +135,7 @@ footer .footer-items p {
       -ms-flex-pack: center;
           justify-content: center;
   visibility: visible;
+  overflow: hidden;
 }
 
 .overlay.active {
@@ -247,7 +246,7 @@ footer .footer-items p {
   border-radius: 4px;
   max-width: 35%;
   width: 35%;
-  background-color: #fa2e2e;
+  background-color: #646464;
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
@@ -262,8 +261,10 @@ footer .footer-items p {
 @media (max-width: 600px) {
   .main-header {
     background-color: #2A3740;
+    position: fixed;
   }
-  .header-item_name {
+  .header-item_name a {
+    text-decoration: none;
     color: #fff;
   }
   .header-item_ico-menu {
@@ -272,13 +273,14 @@ footer .footer-items p {
   .main-menu {
     background-color: #2A3740;
     display: block;
-    top: 0;
     position: fixed;
-    height: 100vh;
+    top: 50px;
+    height: 95vh;
     width: 100%;
     visibility: visible;
   }
   .btn-close-menu {
+    visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -369,7 +371,7 @@ hr {
 }
 
 .article-about-us {
-  width: 90%;
+  width: 80%;
   text-align: justify;
 }
 
@@ -411,11 +413,12 @@ hr {
   height: 70px;
   border-radius: 50%;
   background-color: #797575;
+  margin: 20px;
 }
 
 .article-about-us .admin-container .admin-text {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px 10px;
+  margin: 0 0 20px 0px;
   font-size: 18px;
 }
 
@@ -426,43 +429,6 @@ hr {
 }
 
 @media (max-width: 700px) {
-  .admin-container {
-    width: 100%;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 10px 0 0 0;
-    padding-right: 30px;
-  }
-  .admin-container .admin-item_img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #797575;
-    margin-bottom: 10px;
-  }
-  .admin-container .admin-text {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 0 20px 10px;
-    font-size: 18px;
-    width: 100%;
-    display: block;
-  }
-  .admin-container .admin-text p {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    background-color: #f1efef;
-  }
   .about-us-container {
     width: 100%;
   }
@@ -480,11 +446,26 @@ hr {
     width: 98%;
   }
   .admin-container {
-    padding: 0px;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .admin-item_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #797575;
+    margin-bottom: 10px;
   }
   .admin-text {
-    padding: 0;
-    margin: 0;
+    width: 100%;
   }
   .admin-text .admi-text_name {
     text-align: center;
@@ -493,6 +474,15 @@ hr {
   .admin-text .admi-text_description {
     text-align: justify;
     line-height: 1.7pc;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: chartreuse;
+  }
+  .admin-container {
+    padding: 0 !important;
   }
 }
 /*# sourceMappingURL=about-us.css.map */
