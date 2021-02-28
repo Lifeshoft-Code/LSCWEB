@@ -117,9 +117,9 @@ footer .footer-items p {
 }
 
 .overlay {
-  background-color: #000000a2;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: #000000a8;
+  -webkit-backdrop-filter: blur(px);
+          backdrop-filter: blur(px);
   position: fixed;
   top: 0;
   right: 0;
@@ -143,7 +143,9 @@ footer .footer-items p {
 }
 
 .form-container {
-  background-color: #fff;
+  background-color: #acacaca8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 10px;
   margin: 10px;
   height: auto;
@@ -215,9 +217,17 @@ footer .footer-items p {
 }
 
 .form-container form input {
+  background-color: #1f1e1e2c;
+  border-radius: 6px;
+  border: 1px solid #d9d9d956;
   padding: 5px;
   margin: 2px 0 8px 0;
   width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container form input:focus {
+  outline: none;
 }
 
 .form-container form .form-btns {
@@ -235,7 +245,7 @@ footer .footer-items p {
   border-radius: 4px;
   max-width: 35%;
   width: 35%;
-  background-color: #3899f3;
+  background-color: #1183ee;
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
@@ -254,7 +264,7 @@ footer .footer-items p {
 }
 
 .form-container form .a-account {
-  color: #2222f0;
+  color: #fbfbff;
   margin: 4px;
 }
 
